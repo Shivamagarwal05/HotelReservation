@@ -1,0 +1,189 @@
+@charset "ISO-8859-1";
+.main-container{
+
+	background-color:"white";
+
+
+
+}
+
+
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+	margin-top: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+.myslides{
+	display:none;
+	border:2px solid black;
+
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Fading animation */
+.fade {
+ 
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 800px) {
+  .prev, .next {font-size: 11px}
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+border-radius:10px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+   margin-top: 20px;
+border-radius:10px;
+padding:5px;
+ color: #f2f2f2;
+}
+
+.links a {
+ 	
+ background-color:red;
+  color:white;
+	padding:10px;
+	margin-left:10px;
+ 
+  
+  text-decoration: none;
+}
+.links{
+	
+
+	
+	
+}
+
+.row{
+
+	
+	
+	padding:4px;
+
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+
+
+
+
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: #333;
+  padding: 20px;
+  max-width:90%;
+ 	color:white;
+	text-align:justify;
+word-wrap: break-word;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	border-radius:8px;
+
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+	color: #f2f2f2;
+	 background-color: #333;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+
+  
+	height:500px;
+
+
+}
+
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
