@@ -68,6 +68,8 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
  <div class="rightcolumn">
     <div class="card">
       <h2>Booking Details</h2>
+      <h3>Hi <%=obj.getGuestname() %>Your Booking for <%=obj.getNoofdays()%> nights is confirmed. </h3>
+      <h2>Booking Id : <%=obj.getBid() %>></h2>
       <h2>Room No.<%=obj.getRoomno() %></h2>
        <h2><%= hotel.getHotelname()%></h2>
       
@@ -76,10 +78,15 @@ response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
       <h3>City:<%=hotel.getCity() %></h3>
       <h6>Contact Info :  <%=  hotel.getContactno() %></h6>
       <div class="cincout">
+      	<%if(obj.getRoomtype().equals("Family")){ %>
+      		<h3>Adults:<%=obj.getNoadults() %></h3>
+      		<h3>Childs:<%=obj.getNochilds() %></h3>
+      	<%} %>
       	<h5>CheckinDate:</h5>
       	<h4><%=obj.getCheckindate() %></h4>
       	<h5>CheckoutDate:</h5>
       	<h4><%=obj.getCheckoutdate()%></h4>
+      	
       <br>
       	<h5>CheckinTime:</h5>
       	<h4>12:00 PM</h4>
